@@ -1,5 +1,5 @@
 # edu.cn
 DOMAIN-SUFFIX,edu.cn
 # WIN重定向网页
-URL-REGEX,^https?:\/\/(www\.)?msftconnecttest\.com\/redirect
+
 DOMAIN-SUFFIX,msftconnecttest.com
