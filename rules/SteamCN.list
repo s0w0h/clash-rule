@@ -1,6 +1,6 @@
-api.steampowered.com
-*.cm.steampowered.com
-*.steamserver.net
+DOMAIN-SUFFIX,api.steampowered.com
+DOMAIN-SUFFIX,cm.steampowered.com
+DOMAIN-SUFFIX,steamserver.net
 103.10.124.0/24
 103.10.125.0/24
 103.28.54.0/24
