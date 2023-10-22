@@ -7,3 +7,4 @@ DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,download.prss.microsoft.com
 # IPV6Test
 DOMAIN-SUFFIX,test-ipv6.com
+DOMAIN-SUFFIX,ipv6-test.ch
