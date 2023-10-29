@@ -16,4 +16,4 @@ DOMAIN-SUFFIX,pi.ai
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN,bard.google.com
-DOMAIN,o33249.ingest.sentry.io
+DOMAIN-SUFFIX,o33249.ingest.sentry.io
