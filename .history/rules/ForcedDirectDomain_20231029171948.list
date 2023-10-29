@@ -6,8 +6,8 @@ DOMAIN-SUFFIX,msftconnecttest.com
 # Microsoft web Download
 DOMAIN-SUFFIX,download.prss.microsoft.com
 # 某些可能影响其他工作的网站
-PROCESS-NAME,leigod
-USER-AGENT,leigod*
+PROCESS-NAME,OneDriveUpdater
+USER-AGENT,OneDrive*
 DOMAIN-SUFFIX,tebex.io
 DOMAIN-SUFFIX,leigod.com
 # PTDownload
