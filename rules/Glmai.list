@@ -1,7 +1,9 @@
-# 常见国外大语言模型
+DOMAIN-SUFFIX,api.steampowered.com
+DOMAIN-SUFFIX,cm.steampowered.com
+DOMAIN-SUFFIX,steamserver.net
+DOMAIN-KEYWORD,bing
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,heypi.com
 DOMAIN-SUFFIX,pi.ai
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,bard.google.com
