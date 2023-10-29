@@ -14,5 +14,5 @@ DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,pi.ai
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
-DOMAIN,bard.google.com
-DOMAIN,o33249.ingest.sentry.io
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,o33249.ingest.sentry.io
