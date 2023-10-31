@@ -8,6 +8,7 @@ log-level: info
 external-controller: 127.0.0.1:9090 
 dns:
   enabled: true
+  ipv6: true
   nameserver:
     - https://dns.alidns.com/dns-query # 阿里 DoH DNS
     - https://doh.360.cn/dns-query # 360 DoH DNS
