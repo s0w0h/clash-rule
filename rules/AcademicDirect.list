@@ -76,6 +76,25 @@ DOMAIN-SUFFIX,orcid.org
 DOMAIN-SUFFIX,agu.org
 DOMAIN-SUFFIX,asme.org
 DOMAIN-SUFFIX,ascelibrary.org
+DOMAIN-SUFFIX,aip.org
+DOMAIN-SUFFIX,ebscohost.com
+DOMAIN-SUFFIX,epnet.com
+DOMAIN-SUFFIX,emerald.com
+DOMAIN-SUFFIX,engineeringvillage.com
+DOMAIN-SUFFIX,metel.cn
+DOMAIN-SUFFIX,ams.org
+DOMAIN-SUFFIX,cas.org
+DOMAIN-SUFFIX,rsc.org
+DOMAIN-SUFFIX,optica.org
+DOMAIN-SUFFIX,cnbooksearch.com
+DOMAIN-SUFFIX,wiley.com
+DOMAIN-SUFFIX,webofscience.com
+DOMAIN-SUFFIX,clarivate.com
+DOMAIN-SUFFIX,taylorfrancis.com
+DOMAIN-SUFFIX,springer.com
+DOMAIN-SUFFIX,onepetro.org
+DOMAIN-SUFFIX,siam.org
+
 
 # WOS
 DOMAIN-SUFFIX,webofknowledge.com
