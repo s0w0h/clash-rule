@@ -1,0 +1,25 @@
+## sci-hub
+DOMAIN-KEYWORD,sci-hub
+DOMAIN-SUFFIX,sci-hub.cc
+DOMAIN-SUFFIX,sci-hub.la
+DOMAIN-SUFFIX,sci-hub.hk
+
+
+# Elsevier 旗下
+# DOMAIN,ees.elsevier.com
+
+# Citavi
+DOMAIN-SUFFIX,softhead-citavi.com
+DOMAIN-KEYWORD,softhead-citavi
+
+# MED
+DOMAIN-KEYWORD,nccn.org
+DOMAIN-SUFFIX,bestpractice.bmj.com
+DOMAIN-SUFFIX,seer.cancer.gov
+DOMAIN-SUFFIX,inoreader.com
+DOMAIN-SUFFIX,gdc.cancer.gov
+DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,app.mrbase.org
+DOMAIN-KEYWORD,mrbase.org
+DOMAIN-KEYWORD,voxelx.com
+DOMAIN-KEYWORD,seerstat.imsweb.com
