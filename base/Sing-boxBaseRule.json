@@ -1,0 +1,303 @@
+{
+    "log": {
+        "level": "info",
+        "timestamp": true
+    },
+    "dns": {
+        "servers": [
+            {
+                "tag": "dns_proxy",
+                "address": "https://1.1.1.1/dns-query",
+                "address_resolver": "dns_resolver",
+                "strategy": "ipv4_only",
+                "detour": "proxy"
+            },
+            {
+                "tag": "dns_proxy",
+                "address": "https://cloudflare-dns.com/dns-query",
+                "address_resolver": "dns_resolver",
+                "strategy": "prefer_ipv4",
+                "detour": "proxy"
+            },
+            {
+                "tag": "dns_proxy",
+                "address": "https://dns.google/dns-query",
+                "address_resolver": "dns_resolver",
+                "strategy": "prefer_ipv6",
+                "detour": "proxy"
+            },
+            {
+                "tag": "dns_proxy",
+                "address": "tls://dns.google:853",
+                "address_resolver": "dns_resolver",
+                "strategy": "prefer_ipv4",
+                "detour": "proxy"
+            },
+            {
+                "tag": "dns_proxy",
+                "address": "1.1.1.1",
+                "strategy": "ipv4_only",
+                "detour": "proxy"
+            },
+            {
+                "tag": "dns_proxy",
+                "address": "8.8.8.8",
+                "strategy": "ipv4_only",
+                "detour": "proxy"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "https://dns.alidns.com/dns-query",
+                "address_resolver": "dns_resolver",
+                "strategy": "prefer_ipv4",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "https://doh.pub/dns-query",
+                "address_resolver": "dns_resolver",
+                "strategy": "prefer_ipv4",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "dot.pub",
+                "address_resolver": "dns_resolver",
+                "strategy": "prefer_ipv4",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "223.5.5.5",
+                "strate": "ipv4_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "180.76.76.76",
+                "strate": "ipv4_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "119.29.29.29",
+                "strate": "ipv4_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "117.50.11.11",
+                "strate": "ipv4_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "114.114.114.114",
+                "strate": "ipv4_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "2400:3200::1",
+                "strate": "ipv6_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "2402:4e00::",
+                "strate": "ipv6_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_direct",
+                "address": "h3://dns.alidns.com/dns-query",
+                "address_resolver": "dns_resolver",
+                "strategy": "ipv4_performed",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_block",
+                "address": "rcode://refused"
+            },
+            {
+                "tag": "dns_resolver",
+                "address": "223.5.5.5",
+                "strategy": "ipv4_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_resolver",
+                "address": "2400:3200::1",
+                "strategy": "ipv6_only",
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_resolver",
+                "address": "114.114.114.114",
+                "strategy": "ipv4_only",
+                "detour": "direct"
+            }
+        ],
+        "rules": [
+            {
+                "outbound": [
+                    "any"
+                ],
+                "server": "dns_resolver"
+            },
+            {
+                "geosite": [
+                    "dns_proxy"
+                ],
+                "server": "dns_block",
+                "disable_cache": false
+            },
+            {
+                "geosite": [
+                    "geolocation-!cn"
+                ],
+                "server": "dns_proxy"
+            },
+            {
+                "geosite": [
+                    "cn",
+                    "private"
+                ],
+                "server": "dns_direct"
+            }
+        ]
+    },
+    "route": {
+        "geoip": {
+            "download_url": "https://github.com/soffchen/sing-geoip/releases/latest/download/geoip.db",
+            "download_detour": "proxy"
+        },
+        "geosite": {
+            "download_url": "https://github.com/soffchen/sing-geosite/releases/latest/download/geosite.db",
+            "download_detour": "proxy"
+        },
+        "rules": [
+            {
+                "protocol": "dns",
+                "outbound": "dns-out"
+            },
+            {
+                "process_name": [ // 直连的 Windows 可执行程序
+                    "xray.exe",
+                    "hysteria.exe",
+                    "tuic.exe",
+                    "tuic-client.exe",
+                    "juicity.exe",
+                    "juicity-client.exe"
+                ],
+                "outbound": "direct"
+            },
+            {
+                "protocol": [
+                    "quic"
+                ],
+                "outbound": "block"
+            },
+            {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "geosite": [
+                            "geolocation-!cn"
+                        ]
+                    },
+                    {
+                        "geoip": [
+                            "cn"
+                        ],
+                        "invert": true
+                    }
+                ],
+                "outbound": "proxy"
+            },
+            {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "geosite": [
+                            "cn"
+                        ]
+                    },
+                    {
+                        "geoip": [
+                            "cn"
+                        ]
+                    }
+                ],
+                "outbound": "direct"
+            },
+            {
+                "geosite": [
+                    "private"
+                ],
+                "outbound": "direct"
+            },
+            {
+                "geoip": [
+                    "cn",
+                    "private"
+                ],
+                "outbound": "direct"
+            }
+        ],
+        "auto_detect_interface": true
+    },
+    "inbounds": [
+        {
+            "type": "tun",
+            "tag": "tun-in",
+            "inet4_address": "172.19.0.1/30",
+            "inet6_address": "fdfe:dcba:9876::1/126",
+            "auto_route": true,
+            "strict_route": true,
+            "stack": "system",
+            "sniff": true,
+            "sniff_override_destination": false
+        }
+    ],
+    "outbounds": [
+        {
+            // 粘贴你的客户端配置，需要保留 "tag": "proxy"
+            "tag": "proxy"
+        },
+        {
+            "type": "direct",
+            "tag": "direct"
+        },
+        {
+            "type": "block",
+            "tag": "block"
+        },
+        {
+            "type": "urltest",
+            "tag": "新加坡测速",
+            "outbounds": [
+                "proxy-a",
+                "proxy-b",
+                "proxy-c"
+            ],
+            "url": "https://www.google.com/generate_204",
+            "interval": "1m",
+            "tolerance": 100,
+            "interrupt_exist_connections": false
+        },
+        {
+            "type": "dns",
+            "tag": "dns-out"
+        }
+    ],
+    "ntp": {
+        "enabled": true,
+        "server": "ntp.tencent.com",
+        "server_port": 123,
+        "interval": "30m",
+        "detour": "direct"
+    }
+}
