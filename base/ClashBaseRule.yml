@@ -3,6 +3,7 @@ socks-port: 7891
 allow-lan: true
 bind-address: "*"
 ipv6: true
+external-controller: 127.0.0.1:9090
 mode: Rule
 log-level: info
 dns:
