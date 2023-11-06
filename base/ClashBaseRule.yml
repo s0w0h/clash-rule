@@ -5,7 +5,6 @@ bind-address: "*"
 ipv6: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090 
 dns:
   enabled: true
   ipv6: true
