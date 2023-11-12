@@ -2,13 +2,15 @@
 
 本项目自用clash规则
 
+如果有需要添加或者修改的规则请提Issues，我会尽量在不影响整体的情况下调整，但是我更推荐fork或者复制后进行自行修改
+
 规则源自：
 
 [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)
 
 [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 
-等多方规则，并依据个人情况进行调整更改
+**等**多方规则，并依据个人情况进行调整更改
 
 规则为代理和非代理，两个规则文件效果完全一致，区别在于代理版本国内访问好一些（存疑)
 
