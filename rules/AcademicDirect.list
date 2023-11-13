@@ -16,12 +16,12 @@ DOMAIN-SUFFIX,doi.org
 ## Med
 DOMAIN-SUFFIX,pubmed.ncbi.nlm.nih.gov
 
-DOMAIN-KEYWORD,jamanetwork.com
-DOMAIN-KEYWORD,redjournal.org
-DOMAIN-KEYWORD,thegreenjournal.com
-DOMAIN-KEYWORD,ejcancer.com
+DOMAIN-SUFFIX,jamanetwork.com
+DOMAIN-SUFFIX,redjournal.org
+DOMAIN-SUFFIX,thegreenjournal.com
+DOMAIN-SUFFIX,ejcancer.com
 DOMAIN-SUFFIX,cco.amegroups.com
-DOMAIN-KEYWORD,bmj.com
+DOMAIN-SUFFIX,bmj.com
 DOMAIN-SUFFIX,cancerres.aacrjournals.org
 DOMAIN-SUFFIX,oncologypro.esmo.org
 
@@ -92,6 +92,7 @@ DOMAIN-SUFFIX,webofscience.com
 DOMAIN-SUFFIX,clarivate.com
 DOMAIN-SUFFIX,taylorfrancis.com
 DOMAIN-SUFFIX,springer.com
+DOMAIN-KEYWORD,springernature
 DOMAIN-SUFFIX,onepetro.org
 DOMAIN-SUFFIX,siam.org
 
