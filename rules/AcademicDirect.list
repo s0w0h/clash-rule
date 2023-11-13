@@ -55,7 +55,7 @@ DOMAIN-SUFFIX,springernature.com
 DOMAIN-SUFFIX,springer.com
 DOMAIN-SUFFIX,link.springer.com
 DOMAIN-SUFFIX,bmccancer.biomedcentral.com
-
+DOMAIN-KEYWORD,springernature
 
 ## JSTOR 旗下
 DOMAIN-SUFFIX,jstor.org
@@ -91,8 +91,6 @@ DOMAIN-SUFFIX,wiley.com
 DOMAIN-SUFFIX,webofscience.com
 DOMAIN-SUFFIX,clarivate.com
 DOMAIN-SUFFIX,taylorfrancis.com
-DOMAIN-SUFFIX,springer.com
-DOMAIN-KEYWORD,springernature
 DOMAIN-SUFFIX,onepetro.org
 DOMAIN-SUFFIX,siam.org
 
