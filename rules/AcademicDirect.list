@@ -51,11 +51,11 @@ DOMAIN-KEYWORD,els-cdn
 DOMAIN-SUFFIX,oup.com
 
 ## Springer 旗下
-DOMAIN-SUFFIX,springernature.com
+DOMAIN-KEYWORD,springernature
 DOMAIN-SUFFIX,springer.com
 DOMAIN-SUFFIX,link.springer.com
 DOMAIN-SUFFIX,bmccancer.biomedcentral.com
-DOMAIN-KEYWORD,springernature
+
 
 ## JSTOR 旗下
 DOMAIN-SUFFIX,jstor.org
