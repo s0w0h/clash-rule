@@ -12,10 +12,6 @@ DOMAIN-SUFFIX,sci-hub.hk
 DOMAIN-SUFFIX,softhead-citavi.com
 DOMAIN-KEYWORD,softhead-citavi
 
-# github gerop
-DOMAIN-KEYWORD,ghcr1production
-DOMAIN-SUFFIX,ghcr1production.blob.core.windows.net
-
 # MED
 DOMAIN-KEYWORD,nccn.org
 DOMAIN-SUFFIX,bestpractice.bmj.com
