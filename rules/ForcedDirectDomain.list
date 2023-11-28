@@ -11,7 +11,6 @@ USER-AGENT,leigod*
 DOMAIN-SUFFIX,tebex.io
 DOMAIN-SUFFIX,leigod.com
 DOMAIN-KEYWORD,tailscale
-DOMAIN-KEYWORD,argotunnel
 
 # PTDownload
 DOMAIN-SUFFIX,pttime.org
