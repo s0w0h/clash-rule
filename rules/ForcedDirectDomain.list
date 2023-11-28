@@ -10,6 +10,7 @@ PROCESS-NAME,leigod
 USER-AGENT,leigod*
 DOMAIN-SUFFIX,tebex.io
 DOMAIN-SUFFIX,leigod.com
+DOMAIN-KEYWORD,tailscale
 # PTDownload
 DOMAIN-SUFFIX,pttime.org
 DOMAIN-SUFFIX,hitpt.com
