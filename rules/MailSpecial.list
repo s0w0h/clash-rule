@@ -1,3 +1,21 @@
-DOMAIN-KEYWORD,smtp
-DOMAIN-KEYWORD,imap
-DOMAIN-KEYWORD,pop
+# 谷歌邮箱
+DOMAIN-SUFFIX,smtp.gmail.com
+DOMAIN-SUFFIX,imap.gmail.com
+DOMAIN-SUFFIX,pop.gmail.com
+DOMAIN-SUFFIX,pop3.gmail.com
+# Outlook
+DOMAIN-SUFFIX,smtp.office365.com
+# DOMAIN-SUFFIX,outlook.office365.com
+DOMAIN-SUFFIX,pop.live.com
+DOMAIN-SUFFIX,pop3.live.com
+DOMAIN-SUFFIX,smtp.live.com
+DOMAIN-SUFFIX,imap.live.com
+DOMAIN-SUFFIX,smtp.outlook.com
+DOMAIN-SUFFIX,pop.outlook.com
+DOMAIN-SUFFIX,imap.outlook.com
+DOMAIN-SUFFIX,pop3.outlook.com
+# 雅虎邮箱
+DOMAIN-SUFFIX,smtp.mail.yahoo.com
+DOMAIN-SUFFIX,pop.mail.yahoo.com
+DOMAIN-SUFFIX,pop3.mail.yahoo.com
+DOMAIN-SUFFIX,imap.mail.yahoo.com
