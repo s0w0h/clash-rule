@@ -40,3 +40,6 @@ jobs:
       run: |
         git commit -m "Update IP CIDR list" -a
         git push
+    - name: Send email notifications
+      if: ${{ failure() }}
+      run: echo "Error occurred, but email notifications are ignored."
