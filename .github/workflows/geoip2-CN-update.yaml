@@ -30,7 +30,7 @@ jobs:
         sed -i 's/$/,no-resolve/' GeoIP2-CN.txt
         mkdir -p rules
         cp GeoIP2-CN.txt rules/GeoIP2-CN.list
-      
+        
     - name: Add changes to the repository
       run: |
         git add .
