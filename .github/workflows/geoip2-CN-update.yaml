@@ -22,13 +22,13 @@ jobs:
 
     - name: Process IPs and save to ./rules/GeoIP2-CN.list
       run: |
-        wget https://raw.githubusercontent.com/Hackl0us/GeoIP2-CN/release/CN-ip-cidr.txt -O ips.txt
-        sed -i '/^[0-9.]\+\/[0-9]\+$/!d' ips.txt
-        sed -i 's/^/IP-CIDR,/' ips.txt
-        sed -i 's/$/,no-resolve/' ips.txt
+        wget https://raw.githubusercontent.com/Hackl0us/GeoIP2-CN/release/CN-ip-cidr.txt -O GeoIP2-CN.txt
+        sed -i '/^[0-9.]\+\/[0-9]\+$/!d' GeoIP2-CN.txt
+        sed -i 's/^/IP-CIDR,/' GeoIP2-CN.txt
+        sed -i 's/$/,no-resolve/' GeoIP2-CN.txt
         mkdir -p rules
-        cp ips.txt rules/GeoIP2-CN.list
-
+        cp GeoIP2-CN.txt rules/GeoIP2-CN.list
+      
     - name: Add changes to the repository
       run: |
         git add .
